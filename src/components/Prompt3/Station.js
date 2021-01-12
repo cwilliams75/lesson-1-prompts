@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ShipInfo from './ShipInfo'
 
 class Station extends Component {
   constructor() {
@@ -19,8 +20,12 @@ class Station extends Component {
   render() {
     return (
       <div>
+<h1>Here is the Crew Manifest for the {this.state.shipName}
+</h1>
+<ShipInfo currentStation={this.state.currentStation} crewMembers={this.state.crewMembers}/>
 
       </div>
+
     );
   }
 }
