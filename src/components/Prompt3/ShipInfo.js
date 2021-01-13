@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class ShipInfo extends Component {
   constructor() {
-   
+   super()
   }
   render() {
     let { shipName, currentStation, crewMembers } = this.props;
